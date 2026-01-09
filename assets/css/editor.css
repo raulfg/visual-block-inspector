@@ -1,0 +1,205 @@
+/**
+ * Visual Block Inspector - Editor Styles
+ * @package VisualBlockInspector
+ */
+
+/* CSS Variables */
+:root {
+	--vbi-color-layout: #4CAF50;
+	--vbi-color-content: #2196F3;
+	--vbi-color-media: #FF9800;
+	--vbi-color-title: #9b59b6;
+	--vbi-color-green-grid: #43A047;
+	--vbi-color-white: #fff;
+	--vbi-outline-color: #2196F3;
+	--vbi-outline-opacity: 0.4;
+}
+
+/* Base style for inspected blocks */
+.vbi-inspected-block {
+	position: relative !important;
+	outline: 1px dotted color-mix(in srgb, var(--vbi-outline-color) calc(var(--vbi-outline-opacity) * 100%), transparent) !important;
+	outline-offset: 1px !important;
+	box-sizing: border-box !important;
+	transition: outline-color 0.15s ease !important;
+}
+
+/* Hover state - fully opaque borders */
+.vbi-inspected-block:hover {
+	outline-color: var(--vbi-outline-color) !important;
+	--vbi-outline-opacity: 1;
+}
+
+/* Block type colors */
+.vbi-type-layout {
+	--vbi-outline-color: var(--vbi-color-layout);
+}
+
+.vbi-type-content {
+	--vbi-outline-color: var(--vbi-color-content);
+}
+
+.vbi-type-media {
+	--vbi-outline-color: var(--vbi-color-media);
+}
+
+/* Block label - visible on hover, positioned at top-right by default */
+.vbi-inspected-block::before {
+	content: attr(data-vbi-block-name);
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: var(--vbi-outline-color);
+	color: var(--vbi-color-white);
+	padding: 2px 8px;
+	font-size: 10px;
+	font-weight: 500;
+	border-radius: 2px;
+	white-space: nowrap;
+	pointer-events: none;
+	z-index: 9999;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	line-height: 1.4;
+	opacity: 0;
+	transition: opacity 0.15s ease;
+}
+
+/* Show label on hover */
+.vbi-inspected-block:hover::before {
+	opacity: 0.95 !important;
+	z-index: 10000;
+}
+
+/* Blocks WITH children - label outside (top), no background, text only */
+.vbi-inspected-block[data-vbi-has-children="true"]::before {
+	top: -16px !important;
+	left: 50% !important;
+	right: auto !important;
+	transform: translateX(-50%) !important;
+	background: transparent !important;
+	color: var(--vbi-outline-color) !important;
+	padding: 0 !important;
+	font-weight: 600 !important;
+}
+
+/* Individual columns (core/column) */
+.vbi-inspected-block[data-vbi-block-name="core/column"]::before {
+	content: attr(data-vbi-block-name);
+}
+
+/* Show column label on hover */
+.vbi-inspected-block[data-vbi-block-name="core/column"]:hover::before {
+	opacity: 0.95 !important;
+	z-index: 10000;
+}
+
+/* Show column numbers when hovering over parent core/columns */
+.vbi-inspected-block[data-vbi-block-name="core/columns"]:hover .vbi-inspected-block[data-vbi-block-name="core/column"]::before {
+	content: attr(data-vbi-column-number) !important;
+	top: 0px !important;
+	left: 11px !important;
+	right: auto !important;
+	background: var(--vbi-color-layout) !important;
+	color: var(--vbi-color-white) !important;
+	padding: 2px 8px !important;
+	font-size: 10px !important;
+	font-weight: 500 !important;
+	border-radius: 2px !important;
+	opacity: 0.95 !important;
+	z-index: 10000;
+}
+
+/* Grid items - ::before shows number on left */
+.vbi-inspected-block[data-vbi-grid-item-number]::before {
+	content: attr(data-vbi-grid-item-number);
+	top: 2px;
+	left: 2px;
+	right: auto;
+	background: var(--vbi-color-green-grid);
+	color: var(--vbi-color-white);
+	padding: 2px 8px;
+	font-size: 10px;
+	font-weight: 500;
+	border-radius: 2px;
+}
+
+/* Grid items - ::after shows block name on right */
+.vbi-inspected-block[data-vbi-grid-item-number]::after {
+	content: attr(data-vbi-block-name);
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	background: var(--vbi-outline-color);
+	color: var(--vbi-color-white);
+	padding: 2px 8px;
+	font-size: 10px;
+	font-weight: 500;
+	border-radius: 2px;
+	white-space: nowrap;
+	pointer-events: none;
+	z-index: 9999;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	line-height: 1.4;
+	opacity: 0;
+	transition: opacity 0.15s ease;
+}
+
+/* Show both labels when hovering over grid item */
+.vbi-inspected-block[data-vbi-grid-item-number]:hover::before,
+.vbi-inspected-block[data-vbi-grid-item-number]:hover::after {
+	opacity: 0.95 !important;
+	z-index: 10000;
+}
+
+/* Show grid item labels when hovering over parent core/grid */
+.vbi-inspected-block[data-vbi-block-name="core/grid"]:hover .vbi-inspected-block[data-vbi-grid-item-number]::before,
+.vbi-inspected-block[data-vbi-block-name="core/grid"]:hover .vbi-inspected-block[data-vbi-grid-item-number]::after {
+	opacity: 0.95 !important;
+	z-index: 10000;
+}
+
+/* Post/Page title styling */
+.editor-post-title__input,
+.wp-block-post-title {
+	outline: 1px dotted var(--vbi-color-title) !important;
+	outline-offset: 1px !important;
+	border-radius: 2px !important;
+	transition: outline-color 0.15s ease !important;
+	position: relative !important;
+}
+
+.editor-post-title__input:hover,
+.wp-block-post-title:hover,
+.editor-post-title__input:focus,
+.wp-block-post-title:focus {
+	outline-color: var(--vbi-color-title) !important;
+}
+
+/* Title tooltip - centered above */
+.editor-post-title__input::before,
+.wp-block-post-title::before {
+	content: "Post/Page Title";
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: var(--vbi-color-title);
+	color: var(--vbi-color-white);
+	padding: 2px 8px;
+	font-size: 10px;
+	font-weight: 500;
+	border-radius: 2px;
+	white-space: nowrap;
+	pointer-events: none;
+	z-index: 9999;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	line-height: 1.4;
+	opacity: 0;
+	transition: opacity 0.15s ease;
+}
+
+.editor-post-title__input:hover::before,
+.wp-block-post-title:hover::before {
+	opacity: 0.95;
+}
+
