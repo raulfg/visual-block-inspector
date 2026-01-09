@@ -8,23 +8,23 @@
 
 ---
 
-## 🎯 Why You Need This Plugin
+## Why You Need This Plugin
 
 Ever felt lost editing a complex WordPress page? Not sure which block is which? Wondering if that's a column or a group?
 
 **Visual Block Inspector solves this instantly.**
 
 When you activate this plugin, every block in your editor gets:
-- ✨ **Color-coded outline** so you can see exactly where each block starts and ends
-- 🏷️ **Automatic label** showing the block type (appears when you hover)
-- 🔢 **Smart numbering** for columns and grids
-- 📐 **Visual hierarchy** so you understand parent/child relationships at a glance
+- **Color-coded outline** so you can see exactly where each block starts and ends
+- **Automatic label** showing the block type (appears when you hover)
+- **Smart numbering** for columns and grids
+- **Visual hierarchy** so you understand parent/child relationships at a glance
 
 **No setup. No configuration. Just activate and hover.**
 
 ---
 
-## 🎨 What You'll See
+## What You'll See
 
 ### Automatic Color Coding
 
@@ -53,7 +53,7 @@ When you activate this plugin, every block in your editor gets:
 
 ---
 
-## 🚀 Installation (60 seconds)
+## Installation (60 seconds)
 
 ### Method 1: WordPress Admin (Recommended)
 
@@ -72,7 +72,7 @@ When you activate this plugin, every block in your editor gets:
 
 ---
 
-## 📖 How to Use
+## How to Use
 
 ### Basic Usage
 
@@ -85,15 +85,15 @@ When you activate this plugin, every block in your editor gets:
 
 ### Tips for Best Results
 
-✅ **Find container blocks fast** - Look for green outlines
-✅ **Count your columns** - Hover over a Columns block to see numbers (1, 2, 3...)
-✅ **Understand nesting** - Labels outside = parent, labels inside = child
-✅ **Spot your title** - Purple outline shows the page/post title
-✅ **See what's what** - Each content block type has a unique color
+- **Find container blocks fast** - Look for green outlines
+- **Count your columns** - Hover over a Columns block to see numbers (1, 2, 3...)
+- **Understand nesting** - Labels outside = parent, labels inside = child
+- **Spot your title** - Purple outline shows the page/post title
+- **See what's what** - Each content block type has a unique color
 
 ---
 
-## ❓ Frequently Asked Questions
+## Frequently Asked Questions
 
 ### Will this change how my website looks to visitors?
 
@@ -129,16 +129,16 @@ The plugin works in the WordPress editor on any device. However, the hover effec
 
 ---
 
-## 🎓 Who Is This For?
+## Who Is This For?
 
 ### Perfect for:
 
-✅ **WordPress developers** building complex layouts
-✅ **Designers** who need to understand block structure
-✅ **Content creators** working with nested blocks
-✅ **Site builders** managing columns and grids
-✅ **Beginners** learning how the Block Editor works
-✅ **Anyone** who's ever been confused editing a WordPress page
+- **WordPress developers** building complex layouts
+- **Designers** who need to understand block structure
+- **Content creators** working with nested blocks
+- **Site builders** managing columns and grids
+- **Beginners** learning how the Block Editor works
+- **Anyone** who's ever been confused editing a WordPress page
 
 ### Especially Useful When:
 
@@ -152,7 +152,7 @@ The plugin works in the WordPress editor on any device. However, the hover effec
 
 ---
 
-## 🔧 Technical Requirements
+## Technical Requirements
 
 ### Minimum Requirements
 
@@ -162,22 +162,22 @@ The plugin works in the WordPress editor on any device. However, the hover effec
 
 ### Works With
 
-✅ WordPress Block Editor (Gutenberg)
-✅ Full Site Editing
-✅ Post Editor
-✅ Page Editor
-✅ Template Editor
-✅ Pattern Editor
+- WordPress Block Editor (Gutenberg)
+- Full Site Editing
+- Post Editor
+- Page Editor
+- Template Editor
+- Pattern Editor
 
 ### Does NOT Work With
 
-❌ Classic Editor
-❌ Page builders (Elementor, Divi, etc.)
-❌ Frontend editing
+- Classic Editor
+- Page builders (Elementor, Divi, etc.)
+- Frontend editing
 
 ---
 
-## 🎨 Color System Explained
+## Color System Explained
 
 ### Why Different Colors?
 
@@ -197,7 +197,7 @@ The plugin automatically assigns colors when you first use a block type. Once as
 
 ---
 
-## 🆘 Troubleshooting
+## Troubleshooting
 
 ### I don't see any outlines
 
@@ -223,23 +223,23 @@ Yes! Just **deactivate** the plugin from WordPress Admin → Plugins. You can re
 
 ---
 
-## 📱 Support & Feedback
+## Support & Feedback
 
 ### Need Help?
 
-- 📖 Read this guide carefully
-- 🐛 Found a bug? [Report it on GitHub](https://github.com/yourusername/visual-block-inspector/issues)
-- 💡 Have an idea? [Suggest a feature](https://github.com/yourusername/visual-block-inspector/issues)
+- Read this guide carefully
+- Found a bug? [Report it on GitHub](https://github.com/yourusername/visual-block-inspector/issues)
+- Have an idea? [Suggest a feature](https://github.com/yourusername/visual-block-inspector/issues)
 
 ### Love the Plugin?
 
-- ⭐ Rate it on WordPress.org
-- 📢 Tell other WordPress users
-- 🔀 Contribute on GitHub
+- Rate it on WordPress.org
+- Tell other WordPress users
+- Contribute on GitHub
 
 ---
 
-## 🔒 Privacy & Security
+## Privacy & Security
 
 **100% Privacy-Friendly:**
 - No tracking
@@ -256,7 +256,7 @@ Yes! Just **deactivate** the plugin from WordPress Admin → Plugins. You can re
 
 ---
 
-## 📄 License
+## License
 
 **GPL v2 or later** - Free to use on unlimited sites.
 
@@ -264,14 +264,14 @@ Full license: https://www.gnu.org/licenses/gpl-2.0.html
 
 ---
 
-## 👨‍💻 Developer
+## Developer
 
 **Created by Raúl Fernández**
 Website: [https://clink.es](https://clink.es)
 
 ---
 
-## 🆕 Version History
+## Version History
 
 ### Version 1.0.0
 
@@ -279,7 +279,7 @@ Initial release with basic functionality.
 
 ---
 
-## 🌟 Why This Plugin Is Different
+## Why This Plugin Is Different
 
 Most developer tools require technical knowledge. **This plugin just works.**
 
@@ -295,4 +295,4 @@ Most developer tools require technical knowledge. **This plugin just works.**
 
 **Try it today and never get lost in your WordPress editor again!**
 
-*Made with ❤️ for the WordPress community*
+*Made with love for the WordPress community*
